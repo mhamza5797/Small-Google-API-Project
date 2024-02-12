@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=Protest+Strike&display=swap');
+
+body{
+  background-color: #F2EFE5;
+}
+
+#map {
+    height: 70vh;
+    margin: 2em auto;
+    z-index: 0;
+    box-shadow: 0 0 15px #D04848;
+  }
+
+.mapDiv{
+  position: relative;
+
+
+}
+
+.btnContainer{
+  margin-top: 1em;
+}
+
+
+
+.mapDiv {
+  position: relative; 
+}
+
+.inputSection {
+   background-color: #0C2D57;
+  color: #fff;
+  position: absolute;
+  bottom: 30px; 
+  width: calc(100% - 30px); 
+  max-width: 500px; 
+  padding: 15px 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-sizing: border-box; 
+}
+
+
+@media (max-width: 768px) {
+  .inputSection{
+    width: calc(100% - 20px); 
+    bottom: 30px;
+    padding: 10px 5px;
+  }
+
+  #searchbox {
+    width: calc(100% - 20px); 
+  }
+}
+
+
+.btnSelector{
+  font-family: 'Protest Strike', sans-serif;
+  margin: 5px 5px;
+  border: none;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  background-color: #D04848;
+  color: #fff;;
+  border-radius: 10px;
+  transition: 500ms ease-out;
+}
+
+.btnSelector:hover{
+  background-color: #0C2D57;
+  color: #fff;
+}
+
+.nav{
+  background-color: #0C2D57;
+  font-family: 'Protest Strike', sans-serif;
+}
+
+.nav span{
+  color: white;
+}
+
+
+.pac-card {
+  background-color: #0C2D57;
+  position: absolute;
+  border: 0;
+  width: calc(100% - 30px); 
+  max-width: 300px; 
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  top: 90px;
+  padding: 0;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  margin-left: 12px;
+  user-select: none;
+  padding: 0 11px 0 13px;
+  text-align: left;
+  padding: 20px 12px;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  border-left: 10px solid #D04848;
+  font-family: 'Oswald', sans-serif;
+}
+
+.controls label{
+  cursor: pointer;
+}
+
+.controls input{
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .pac-card{
+    width: calc(100% - 20px); 
+    bottom: 30px;
+    max-height: 130px;
+    padding: 20px 12px;
+  }
+}
+
+
+
+#searchbox{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+#searchbox:focus-visible{
+  border: none;
+}
+
+.inputSection span{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-right: 5px;
+}
+
+.h1:hover{
+  color: #fff;
+}
+
+.card-containar{
+  margin-top: -50px;
+  user-select: none;
+}
+
+.card-containar .row .col{
+  background-color: #0C2D57;
+  width: 300px;
+  height: 450px;
+  margin: 50px auto;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 5px;
+  border-bottom: 15px solid #D04848;
+
+}
+
+.logos{
+  width: 90px;
+  background-color: #F2EFE5;
+  padding: 15px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #D04848;
+  margin: 15px auto;
+}
+
+.card-h1{
+  font-size: 2em;
+}
+
+.card-p{
+  text-align: left;
+  margin-top: 10px;
+  
+}
+
+.card-p span{
+  color: #D04848;
+}
+
+.project-header{
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 50px auto;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #0C2D57;
+  border-bottom: 10px solid #D04848;
+}
+
+.footer{
+  background-color: #0C2D57;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  height: 120px;
+  margin-top: 30px;
+  user-select: none;
+}
+
+.footer ul{
+  list-style: none;
+  border-bottom: 5px solid #D04848;
+  border-left: 5px solid #D04848;
+  border-right: 5px solid #D04848;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  display: inline-block;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.footer ul li span{
+  color: #D04848;
+}
+
+.github-link{
+  color: #fff;
+}
+
+.github-link:hover{
+  color: #D04848;
+}
+
+.copyright{
+  float: right;
+  line-height: 120px;
+}
+
+.inner-footer{
+  margin-left: 20px;
+  margin-right: 20px;
+}

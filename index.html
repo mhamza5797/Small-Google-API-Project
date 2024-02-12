@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Map Project</title>
+  </head>
+  <body>
+
+    <nav class="nav navbar">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Muhammad Hamza | Using Google's API</span>
+      </div>
+    </nav>
+
+  <div class="container text-center ">
+
+    <div class="mapDiv">  
+        
+
+      <div id="map"></div>
+
+     <div class="pac-card">  
+          <label class="filterLabel">Filters:</label>
+          
+          <div class="controls">
+            <label for="AllSkatingRings">Show All Skating Rings</label>
+            <input type="checkbox" id="AllSkatingRings" name="AllSkatingRings" value="AllSkatingRings">
+          </div>
+
+          <div class="controls">
+            <label for="AllMuseums">Show All Museums</label>
+            <input type="checkbox" id="AllMuseums" name="AllMuseums" value="AllMuseums">
+          </div>
+
+          <div class="controls">
+            <label for="AllWaterFalls">Show All WaterFall</label>
+            <input type="checkbox" id="AllWaterFalls" name="AllWaterFalls" value="AllWaterFalls">
+          </div>
+      </div>
+  
+
+        <div>
+          <div class="container inputSection">
+            <span>Enter Custom Location:</span>
+            <input id="searchbox" type="text" name="search" placeholder="Search Address">
+          </div>
+      </div>
+    </div>
+
+
+        <div class="container btnContainer">
+          <button class="geolocation btnSelector">Show My Location</button>
+          <button class="btn1 btnSelector">Display Only In-door skating rings</button>
+          <button class="btn2 btnSelector">Display Only outdoor sakting rings</button>
+        </div>
+        <div class="container btnContainer">
+          <button class="btn3 btnSelector">Display All sakting rings</button>
+          <button class="btn4 btnSelector">Display All Museums</button>
+          <button class="btn5 btnSelector">Display All Waterfalls</button>
+        </div>
+
+        <h1 class="project-header">Project details</h1>
+
+
+        <div class="container-fluid text-center card-containar ">
+          <div class="row">
+            <div class="col col-xs-12 col-sm-6">
+              <img class="logos" src="imgs/htmllogo.png">
+              <h1 class="card-h1">HTML/CSS</h1>
+              <p class="card-p"><span>HTML:</span> Used to structure and organize the content on the webpage, such as the map area, buttons, and filter options.</p>
+              <p class="card-p"><span>CSS:</span> Applied to style the webpage, controlling the visual presentation of the HTML elements, including colors, fonts, and layout to achieve a pleasing aesthetic and user-friendly interface.</p>
+            </div>
+            <div class="col col-xs-12 col-sm-6">
+              <img class="logos" src="imgs/javascriptlogo.png">
+              <h1 class="card-h1">Javascript ES6</h1>
+              <p class="card-p"><span>Javascript:</span> is the driving force behind the site's interactivity, handling user inputs, filter toggles, map updates, and integration with the Google Maps API to dynamically display locations based on user preferences.</p>
+            </div>
+            <div class="col col-xs-12 col-sm-6">
+              <img class="logos" src="imgs/bootstraplogo.png">
+              <h1 class="card-h1">Bootstrap 5</h1>
+              <p class="card-p"><span>Bootstrap</span> is used for its responsive design features, ensuring the website is adaptable to various screen sizes and devices. It provides a grid system, responsive utilities, and pre-styled components for quick and efficient UI development.</p>
+            </div>
+            <div class="col col-xs-12 col-sm-6">
+              <img class="logos" src="imgs/maps.png">
+              <h1 class="card-h1">Google Maps API</h1>
+              <p class="card-p"><span>Google Maps API:</span> is integrated to render the interactive map, providing geographic data, navigation, and location markers. It allows users to visually explore the area and find places of interest such as skating rinks, museums, and waterfalls.</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+      <div class="inner-footer">
+        <ul>
+          <li><span>Developer:</span> Muhammad Hamza</li>
+          <li><span>Github:</span> <a class="github-link" href="https://github.com/mhamza5797">mhamza5797</a></li>
+        </ul>
+        <p class="copyright">&#169;2024</p>
+      </div>
+    </div>
+
+
+
+  
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF2K4MVXawaKO0IQONBA5Jc04mBIfbdxE&libraries=places&callback=initMap"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
